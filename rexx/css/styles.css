@@ -1,0 +1,23 @@
+/* styles.css */
+
+.mt-10
+{
+  margin-top: 10px;
+}
+
+.mt-50
+{
+  margin-top: 50px;
+}
+
+.form-fields
+{
+  width: 350px;
+  margin: 10px auto;
+}
+
+.form-heading
+{
+  text-align: center;
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
+}
