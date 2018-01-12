@@ -89,6 +89,7 @@ class DATA
     {
       $sSQL = "
               SELECT
+                a.customer_id,
                 a.firstname,
                 a.lastname,
                 a.gender,
@@ -138,6 +139,7 @@ class DATA
         {
           $aCsvData[] = array
           (
+            'id'              => $aRow['customer_id'],
             'firstname'       => $aRow['firstname'],
             'lastname'        => $aRow['lastname'],
             'gender'          => $aRow['gender'],
@@ -156,6 +158,7 @@ class DATA
       $nArraySize = count($aCsvData);
       for($i = 0; $i < $nArraySize; $i++)
       {
+        $aFinalData[$i]['id']     = $aCsvData[$i]['id'];
         if($aCsvData[$i]['gender'] === 'male')
         {
           $aCsvData[$i]['title'] = "Herr";
